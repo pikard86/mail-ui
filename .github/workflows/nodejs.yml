@@ -22,3 +22,9 @@ jobs:
     - run: npm test
       env:
         CI: true
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag pikard86/mail-ui:$(date +%s)
+    - name: Login to docker hub
+      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+    - name: Push Docker image to docker hub
+      run: docker push pikard86/mail-service
