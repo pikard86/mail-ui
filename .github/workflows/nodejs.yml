@@ -22,8 +22,6 @@ jobs:
     - run: npm test
       env:
         CI: true
-    - run: npm start & wait-on http://localhost:3000
-    - run: npm e2e
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag pikard86/mail-ui:$(date +%s)
     - name: Login to docker hub
