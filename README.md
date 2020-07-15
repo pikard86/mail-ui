@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pikard86_mail-ui&metric=alert_status)](https://sonarcloud.io/dashboard?id=pikard86_mail-ui)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
